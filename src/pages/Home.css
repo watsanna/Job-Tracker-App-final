@@ -1,0 +1,94 @@
+/* src/pages/Home.css */
+
+.page-wrapper {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  color: #013220;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #013220;
+  padding: 20px 40px;
+  color: #FFD700;
+}
+
+
+
+.hero-section {
+  background-color: #014421;
+  color: #FFD700;
+  text-align: center;
+  padding: 80px 20px;
+  flex-grow: 1;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #FFD700;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #f0f0f0;
+  margin-bottom: 40px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primary-button {
+  background-color: #FFD700; /* Yellow */
+  color: #014421; /* Deep Green text */
+  border: none;
+  padding: 14px 28px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: transparent; /* No background on hover */
+  color: #FFD700; /* Yellow text on hover */
+  border: 2px solid #FFD700; /* Add border on hover */
+}
+
+
+.info-section {
+  background-color: #FFF8DC;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.info-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.info-text {
+  font-size: 18px;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

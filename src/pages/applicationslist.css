@@ -1,0 +1,88 @@
+/* .applist-page {
+    background-color: #FFF8DC; /* Beige background */
+    /* padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+    Title */
+    /* .applist-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #014421;
+        text-align: center;
+      } */ */
+
+      body {
+        background-color: #FFF8DC; /* Dark green overriding the page! */
+      }
+    
+      .applist-page {
+        padding: 40px 20px;
+        background-color: #FFF8DC;
+      
+      
+        /* Center everything if you want, OR keep it just for the h2 */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* This will center children horizontally */
+      }
+      
+      .applist-title {
+        text-align: center;
+        color: #014421;
+        font-size: 32px;
+        margin-bottom: 40px;
+      
+        /* If needed for alignment */
+        width: 100%;
+      }
+
+      .job-list {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        gap: 30px; /* spacing between cards */
+        padding: 20px;
+        margin: 0;
+        width: 80%;
+        list-style: none; /* removes default list bullets */
+        
+      }
+      
+      
+      .job-card {
+        background-color: #014421;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        text-align: left;
+        transition: transform 0.3s ease;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+        width: 100%; /* full width of grid column */
+        min-height: 350px; /* keeps cards equal height (optional) */
+      }
+      
+      .job-card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .job-card a {
+        color: #FFD700; /* Gold links */
+        text-decoration: underline;
+        word-break: break-word; /* fix long links */
+      }
+      
+      .job-card select {
+        margin-top: 10px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      

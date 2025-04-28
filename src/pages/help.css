@@ -1,0 +1,217 @@
+/* General Page Styling */
+body {
+  background-color: #FFF8DC; /* Light cream background */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Help Page Container */
+.help-page {
+  padding: 40px 20px;
+  background-color: #FFF8DC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.help-title {
+  text-align: center;
+  color: #014421; /* Dark green */
+  font-size: 32px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* FAQ Section */
+.faq-container {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.faq-container h2 {
+  color: #014421;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  background-color: #fdf6e3;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.faq-item h4 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #014421;
+}
+
+.faq-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Chat Box for Students */
+.chat-container {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fdf6e3;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.chat-container h2 {
+  text-align: center;
+  color: #014421;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual Chat Messages */
+.chat-message {
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.chat-message.self {
+  align-self: flex-end;
+  background-color: #FFD700; /* Gold */
+  color: #014421; /* Dark Green */
+}
+
+.chat-message.other {
+  align-self: flex-start;
+  background-color: #014421; /* Dark Green */
+  color: #FFD700; /* Gold */
+}
+
+/* Metadata + Timestamps */
+.message-meta {
+  font-size: 12px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+}
+
+.message-content {
+  font-size: 14px;
+}
+
+/* Chat Input Section */
+.chat-input-container {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #ccc;
+  background-color: #fff8dc;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.chat-input-container input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.chat-input-container button {
+  padding: 10px 20px;
+  background-color: #FFD700; /* Gold */
+  color: #014421; /* Dark Green */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.chat-input-container button:hover {
+  background-color: #e6c200;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .help-page {
+    padding: 20px 10px;
+  }
+
+  .help-title {
+    font-size: 28px;
+  }
+
+  .faq-container {
+    max-width: 100%;
+  }
+
+  .chat-container {
+    max-width: 100%;
+    height: 400px;
+  }
+
+  .chat-container h2 {
+    font-size: 20px;
+  }
+
+  .chat-input-container input {
+    font-size: 12px;
+  }
+
+  .chat-input-container button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+.offers-list {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  background-color: #f1d118;;
+}
+
+.offers-list h2 {
+  color: #014421;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.offers-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.offers-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}

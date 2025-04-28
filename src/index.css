@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@media (max-width: 768px) {
+  .navbar { flex-direction: column; }
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar { 
+    flex-direction: column;
+    align-items: center;
+  }
+}
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 600px) {
+  input, button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+/* index.css or App.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root > div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 1; /* This pushes the footer to the bottom */
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}

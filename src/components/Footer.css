@@ -1,0 +1,8 @@
+/* src/components/Footer.css */
+.footer {
+  background-color: #013220;
+  text-align: center;
+  color: #fafafa;
+  width: 100%;
+  margin-top: auto; /* Push footer to bottom */
+}
